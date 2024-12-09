@@ -1,5 +1,3 @@
-"use client";
-
 import { Params } from 'next/dist/server/request/params'
 import React from 'react'
 
