@@ -13,7 +13,7 @@ const NotFound = () => {
                                 <i className="bi bi-exclamation-circle-fill text-danger display-4"></i>
                                 <span className="display-1 fw-bold bsb-flip-h">4</span>
                             </h2>
-                            <h3 className="h2 mb-2">Oops! You're lost.</h3>
+                            <h3 className="h2 mb-2">Oops! You&apos;re lost.</h3>
                             <p className="mb-5">The page you are looking for was not found.</p>
                             <Link className="btn bsb-btn-5xl btn-dark rounded-pill px-5 py-3 fs-6 m-0" href="/" role="button">Back to Home</Link>
                         </div>

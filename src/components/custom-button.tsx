@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const CustomButton = ({ item }: any) => {
+const CustomButton = ({ item }: any) => { /* eslint-disable  @typescript-eslint/no-explicit-any */
     const addToCart = () => {
         alert(`${item.title} Added to Cart.`)
         console.log(item);

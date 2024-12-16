@@ -1,10 +1,12 @@
-import { Params } from 'next/dist/server/request/params'
+// import { Params } from 'next/dist/server/request/params'
 import React from 'react'
 
-const AboutDetails = async ({ params }: { params: Params }) => {
+const AboutDetails = async ({ params }: { params: Promise<{ id: string }> }) => {
+    const { id } = await params;
+    
     return (
         <div>
-            <h3>About { params.id }</h3>
+            <h3>About { id }</h3>
         </div>
     )
 }

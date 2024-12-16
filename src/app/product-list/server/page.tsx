@@ -17,14 +17,14 @@ const googleFont: NextFont = Lato({
 });
 
 const ProductListServerSide = async () => {
-    let products: any[] = await fetchProducts();
+    const products: any[] = await fetchProducts();
     
-    let { red, blue, green } = inner
+    const { red, blue, green } = inner
 
     return (
         <div>
-            {products.length > 0 && products.map((p, i) =>
-                <div className="card m-2">
+            {products.length > 0 && products.map((p) =>
+                <div className="card m-2" key={p.id}>
                     <div className="card-body row">
                         <div className="col-4">
                             {/* <img src={p.thumbnail} alt="Product Image" /> */}

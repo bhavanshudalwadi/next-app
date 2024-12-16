@@ -11,8 +11,8 @@ export default function Home() {
       </h2>
       <div>
         <h2 className="d-inline">fetch API</h2>
-        <Link href="/product-list/client" className="ms-2">Product List ("use client")</Link>
-        <Link href="/product-list/server" className="ms-2">Product List ("use server")</Link>
+        <Link href="/product-list/client" className="ms-2">Product List (&quot;use client&quot;)</Link>
+        <Link href="/product-list/server" className="ms-2">Product List (&quot;use server&quot;)</Link>
       </div>
     </div>
   );

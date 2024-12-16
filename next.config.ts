@@ -8,7 +8,8 @@ const nextConfig: NextConfig = {
         hostname: "cdn.dummyjson.com",
       },
     ]
-  }
+  },
+  output: "export" // To generate static html
 };
 
 export default nextConfig;
