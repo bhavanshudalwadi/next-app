@@ -48,4 +48,11 @@ const ProductListServerSide = async () => {
     )
 }
 
+export function generateMetadata(){
+    return {
+        title: "Product List Page",
+        description: "List of products with image, name, description, brand, category, rating, etc"
+    }
+}
+
 export default ProductListServerSide
