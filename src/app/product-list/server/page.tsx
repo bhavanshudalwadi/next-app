@@ -9,6 +9,7 @@ import outer from '@/styles/outside.module.css';
 import Image from 'next/image';
 import { Lato } from 'next/font/google';
 import { NextFont } from 'next/dist/compiled/@next/font';
+import { API_BASE_URL } from '@/config/constants';
 
 const googleFont: NextFont = Lato({
     weight: '400',
@@ -20,6 +21,10 @@ const ProductListServerSide = async () => {
     const products: any[] = await fetchProducts();
     
     const { red, blue, green } = inner
+
+    console.log(process.env);
+    console.log(process.env.JWT_SECRET);
+    console.log(API_BASE_URL);
 
     return (
         <div>

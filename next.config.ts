@@ -9,7 +9,21 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  output: "export" // To generate static html
+  // output: "export", // To generate static html
+  redirects: async () => {
+    return [
+      {
+        source: '/sample',
+        destination: '/',
+        permanent: false
+      },
+      {
+        source: '/about/owner',
+        destination: '/about',
+        permanent: false
+      },
+    ]
+  }
 };
 
 export default nextConfig;
